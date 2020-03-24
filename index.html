@@ -31,7 +31,10 @@
   <!-- template main css file -->
   
   <link rel="stylesheet" href="https://guoda.savolro.com/css/style.min.css" integrity="" media="screen">
-</head><body><section class="top-bar animated-header">
+</head><body>
+        <div id="modal" class="modal">
+            <img class="modal-content" id="contentimg">
+        </div><section class="top-bar animated-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -80,7 +83,7 @@
 
 
 <!-- Slider Section Start -->
-<section id="hero-area" style='background-image: url("https://guoda.savolro.com/images/slider.gif");'>
+<video autoplay loop id="hero-area" src="https://guoda.savolro.com/images/slider.mp4">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -90,19 +93,18 @@
                         <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
                             <span>GUODA ORLOVAITE</span>
                             <br>
-                            <span class="cd-words-wrapper">
-                                
-                            </span>
+                            
                         </h1>
                     </section>
-                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s">The one that&#39;s hella awkward at any given situation.</h2>
+                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s">The one that&#39;s hella awkward at any given situation</h2>
                     
                 </div>
             </div>
         </div>
     </div>
-</section>
+</video>
 <!-- Slider Section End -->
+
 
 
 
@@ -143,7 +145,7 @@
         </div>
         <div class="row">
             
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-lg-4">
                 
                 <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     
@@ -156,7 +158,7 @@
                 </div>
             </div>
             
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-lg-4">
                 
                 <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     
@@ -169,7 +171,7 @@
                 </div>
             </div>
             
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-lg-4">
                 
                 <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
                     
@@ -199,7 +201,7 @@
         </div>
         <div class="row">
             
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-lg-4">
                 
                 <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     
@@ -212,7 +214,7 @@
                 </div>
             </div>
             
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-lg-4">
                 
                 <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     
@@ -225,7 +227,7 @@
                 </div>
             </div>
             
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-lg-4">
                 
                 <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
                     
@@ -259,22 +261,44 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-03-15.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img  onclick="show(this)" src="/images/portfolio/2020-03-15.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
                     <figcaption>
                         <h4>
                             
                                 2020-03-15
                         </h4>
-                        <p>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="100ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2020-03-06.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
                             
-                        </p>
-                    </figcaption>
+                                2020-03-06
+                        </h4>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2020-02-29.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
+                            
+                                2020-02-29
+                        </h4>
                 </figure>
             </div>
             
@@ -282,22 +306,44 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-03-06.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img  onclick="show(this)" src="/images/portfolio/2020-02-02.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
                     <figcaption>
                         <h4>
                             
-                                2020-03-06
+                                2020-02-02
                         </h4>
-                        <p>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="400ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2020-01-14.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
                             
-                        </p>
-                    </figcaption>
+                                2020-01-14
+                        </h4>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2020-01-13.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
+                            
+                                2020-01-13
+                        </h4>
                 </figure>
             </div>
             
@@ -305,22 +351,44 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="600ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-02-29.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img  onclick="show(this)" src="/images/portfolio/2020-01-12.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
                     <figcaption>
                         <h4>
                             
-                                2020-02-29
+                                2020-01-12
                         </h4>
-                        <p>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="700ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2020-01-11.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
                             
-                        </p>
-                    </figcaption>
+                                2020-01-11
+                        </h4>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="800ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2020-01-07.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
+                            
+                                2020-01-07
+                        </h4>
                 </figure>
             </div>
             
@@ -328,22 +396,44 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-02-02.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img  onclick="show(this)" src="/images/portfolio/2019-10-08.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
                     <figcaption>
                         <h4>
                             
-                                2020-02-02
+                                2019-10-08
                         </h4>
-                        <p>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1000ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2019-10-04.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
                             
-                        </p>
-                    </figcaption>
+                                2019-10-04
+                        </h4>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1100ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2019-10-03.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
+                            
+                                2019-10-03
+                        </h4>
                 </figure>
             </div>
             
@@ -351,22 +441,44 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1200ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-01-14.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img  onclick="show(this)" src="/images/portfolio/2019-09-15.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
                     <figcaption>
                         <h4>
                             
-                                2020-01-14
+                                2019-09-15
                         </h4>
-                        <p>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1300ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2016-03-01.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
                             
-                        </p>
-                    </figcaption>
+                                2016-03-01
+                        </h4>
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1400ms">
+                    <div class="img-wrapper">
+                        <img  onclick="show(this)" src="/images/portfolio/2016-02-19.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    <figcaption>
+                        <h4>
+                            
+                                2016-02-19
+                        </h4>
                 </figure>
             </div>
             
@@ -374,257 +486,38 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1500ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-01-13.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2020-01-13
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1800ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-01-12.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2020-01-12
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="2100ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-01-11.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2020-01-11
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="2400ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2020-01-07.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2020-01-07
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="2700ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2019-10-08.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2019-10-08
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="3000ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2019-10-04.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2019-10-04
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="3300ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2019-10-03.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2019-10-03
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="3600ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2019-09-15.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2019-09-15
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="3900ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2016-03-01.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2016-03-01
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="4200ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2016-02-19.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                2016-02-19
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="4500ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio/2015-03-16.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img  onclick="show(this)" src="/images/portfolio/2015-03-16.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
                     <figcaption>
                         <h4>
                             
                                 2015-03-16
                         </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
                 </figure>
             </div>
             
         </div>
     </div>
+    
+    <script>
+function show(img) {
+    
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("contentimg");
+    
+
+    modal.style.display = "block";
+    modalImg.src = img.src;   
+    
+
+    
+    modal.onclick = function() {
+    modal.style.display = "none";
+    }
+}
+
+</script>
 </section>
 <!-- Portfolio Section End -->
 
@@ -644,22 +537,32 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio2/Posepractice.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img onclick="show(this)" src="/images/portfolio2/Posepractice.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
+                    
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="100ms">
+                    <div class="img-wrapper">
+                        <img onclick="show(this)" src="/images/portfolio2/posepractice2.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="img-wrapper">
+                        <img onclick="show(this)" src="/images/portfolio2/posepractice3.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    
                 </figure>
             </div>
             
@@ -667,22 +570,32 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio2/posepractice2.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img onclick="show(this)" src="/images/portfolio2/posepractice4.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
+                    
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="400ms">
+                    <div class="img-wrapper">
+                        <img onclick="show(this)" src="/images/portfolio2/posepractice5.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    
+                </figure>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="img-wrapper">
+                        <img onclick="show(this)" src="/images/portfolio2/doodle1.jpg" class="img-fluid" alt="this is a title">
+                        
+                    </div>
+                    
                 </figure>
             </div>
             
@@ -690,166 +603,56 @@
                 
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="600ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio2/posepractice3.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img onclick="show(this)" src="/images/portfolio2/doodle2.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
+                    
                 </figure>
             </div>
             
             <div class="col-md-4 col-sm-6">
                 
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="900ms">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="700ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio2/posepractice4.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img onclick="show(this)" src="/images/portfolio2/doodle3.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
+                    
                 </figure>
             </div>
             
             <div class="col-md-4 col-sm-6">
                 
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1200ms">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="800ms">
                     <div class="img-wrapper">
-                        <img src="/images/portfolio2/posepractice5.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
+                        <img onclick="show(this)" src="/images/portfolio2/doodle4.jpg" class="img-fluid" alt="this is a title">
+                        
                     </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1500ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio2/doodle1.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="1800ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio2/doodle2.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="2100ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio2/doodle3.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                
-                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="2400ms">
-                    <div class="img-wrapper">
-                        <img src="/images/portfolio2/doodle4.jpg" class="img-fluid" alt="this is a title">
-                        <div class="overlay">
-                            <div class="buttons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <h4>
-                            
-                                
-                        </h4>
-                        <p>
-                            
-                        </p>
-                    </figcaption>
+                    
                 </figure>
             </div>
             
         </div>
     </div>
 </section>
+<script>
+function show(img) {
+    
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("contentimg");
+    
+
+    modal.style.display = "block";
+    modalImg.src = img.src;   
+    
+
+    
+    modal.onclick = function() {
+    modal.style.display = "none";
+    }
+}
+
+</script>
 <!-- Portfolio Section End -->
 
 
